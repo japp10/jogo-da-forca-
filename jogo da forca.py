@@ -32,11 +32,11 @@ class JF:
         while True:
             #condição de vitória
              senha = ""
-             for letra in self.palavra:
-                 if letra in acertos:
-                     senha += letra
+             for chute in self.palavra:
+                 if chute in acertos:
+                     senha += chute
                  else :
-                     print(".")
+                     senha += "[ ]"
              print(senha)
              if senha == self.palavra:
                  print("Você acertou!")
@@ -63,19 +63,24 @@ class JF:
              elif erros == 2:
                   print(" 0   ")
                   print(" |   ")
+                  print(" |   ")
              elif erros == 3:
                  print("  0   ")
                  print(" \|   ")
+                 print("  |   ")
              elif erros == 4:
                  print("  0   ")
                  print(" \|/ ")
+                 print("  |   ")
              elif erros == 5:
                  print("  0   ")
                  print(" \|/ ")
+                 print("  |   ")
                  print(" /     ")
              elif erros == 6:
                  print("  0   ")
                  print(" \|/ ")
+                 print("  |   ")
                  print(" / \ ")
             #checa se o jogador perdeu o jogo
              if erros == 6:
