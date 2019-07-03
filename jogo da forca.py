@@ -41,10 +41,10 @@ class JF:
              if senha == self.palavra:
                  print("Você acertou!")
                  break
-             chute = input("\nDigite uma letra:").lower().strip()
+             chute = input("\nDigite uma letra:").lower()
              if chute.isdigit() == True:
                  print("Esse chute foi invalido,por favor digite novamente")
-                 chute = input("\nDigite uma letra:").lower().strip()
+                 chute = input("\nDigite uma letra:").lower()
              #checa se essa letra foi digitada
              if chute in digitadas:
                  print("Você já tentou esta letra!")
