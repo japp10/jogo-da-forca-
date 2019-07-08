@@ -60,6 +60,7 @@ class JF:
              #desenha o boneco da forca
              if erros == 1:
                   print(" 0   ")
+                  print(" |   ")
              elif erros == 2:
                   print(" 0   ")
                   print(" |   ")
